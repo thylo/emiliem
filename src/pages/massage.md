@@ -5,11 +5,11 @@ title: Massage
 pricing:
   - article: Massage relaxant
     duration: 1h
-    image: /img/P1010825b.jpg
+    image: /P1010825b.jpg
     price: 60€
   - article: Massage assis et habillé (sur base des techniques de shiatsu)
     duration: 30min
-    image: /img/P1010827a.jpg
+    image: /P1010827a.jpg
     price: 30€
 ---
 Le massage ouvre la porte de la (re)découverte de soi. Il mène à la paix intérieure, à une sensation de bien être et à une détente aux effets durables.

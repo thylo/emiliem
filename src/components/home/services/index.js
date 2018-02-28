@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "react-static";
+import { Link } from "react-static";
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const ServiceWrapper = styled.div`
@@ -22,7 +23,9 @@ const HomeService = ({ service }) => (
 const HomeServices = ({ services }) => {
   return (
     <Wrapper>
-      {services.map(service => <HomeService service={service} />)}
+      {services.map(service => (
+        <HomeService key={service.link} service={service} />
+      ))}
     </Wrapper>
   );
 };

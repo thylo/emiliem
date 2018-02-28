@@ -10,7 +10,7 @@ services:
   - body: >-
       Grâce à des conseils de couleurs adaptés à chaque participant,
       découvrez les techniques pour vous maquiller naturellement au quotidien.
-    image: /img/P1010847a.jpg
+    image: /P1010847a.jpg
     title: Maquillage
   - body: >-
       Gommage, masque, massage et manucure. Avec des produits naturels, prenez

@@ -1,13 +1,13 @@
 ---
 templateKey: consulting
 slug: /consulting
-title: About our values
+title: Le conseil en images en 4 étapes
 services:
   - title: Analyse des couleurs
     body: >-
       Découvrez l’énergie des couleurs, celles qui s’accordent avec vos
       couleurs naturelles (peau, yeux, cheveux, bouche)
-    image: /img/P1010868b.jpg
+    image: /P1010868b.jpg
     pricing:
       - article: Analyse des couleurs approfondie + nuancier personnalisé
         duration: 1h30
@@ -17,7 +17,7 @@ services:
       Sur base de votre analyse des couleurs, apprenez à vous maquiller de
       façon à mettre en lumière vos atouts naturels (ZAO MakeUp: maquillage
       naturel rechargeable et durable)
-    image: /img/P1010845a.jpg
+    image: /P1010845a.jpg
     pricing:
       - article: >-
           Analyse rapide des couleurs + cours de maquillage + nuancier

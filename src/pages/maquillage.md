@@ -2,7 +2,7 @@
 templateKey: maquillage
 slug: /maquillage
 title: Maquillage
-image: /img/P1010840a.jpg
+image: /P1010840a.jpg
 pricing:
   - article: Ceci ne sera pas utilisé
 ---
