@@ -1,0 +1,141 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/uploads" # Media files will be stored in the repo under public/uploads
+public_folder: "/uploads" # Folder path where uploaded files will be accessed, relative to the base of the built site
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/home/home.md"
+        label: "Accueil"
+        name: "home"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "slug", widget: "hidden", default: "/"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Lien", name: "link", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+      - file: "src/pages/entreprise/entreprise.md"
+        label: "En entreprise"
+        name: "entreprise"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "entreprise-page"}
+          - {label: "Path", name: "slug", widget: "hidden", default: "/entreprise"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - label: "Prix"
+                name: "pricing"
+                widget: "list"
+                fields:
+                  - {label: "Article", name: "article", widget: "string"}
+                  - {label: "Durée", name: "duration", widget: "string"}
+                  - {label: "Prix", name: "price", widget: "string"}
+      - file: "src/pages/about/about.md"
+        label: "Contact"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "slug", widget: "hidden", default: "/about"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "About", name: "body", widget: "markdown"}
+          - {label: "Coordonnées", name: "contact", widget: "markdown"}
+      - file: "src/pages/workshops/workshops.md"
+        label: "Ateliers"
+        name: "workshops"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "workshops-page"}
+          - {label: "Path", name: "slug", widget: "hidden", default: "/workshops"}
+          - {label: "Title", name: "title", widget: "string"}
+          - label: 'Services'
+            name: 'services'
+            widget: 'list'
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "body", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Prix"
+            name: "pricing"
+            widget: "list"
+            fields:
+              - {label: "Article", name: "article", widget: "string"}
+              - {label: "Durée", name: "duration", widget: "string"}
+              - {label: "Prix", name: "price", widget: "string"}
+      - file: "src/pages/maquillage/maquillage.md"
+        label: "Maquillage"
+        name: "maquillage"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "maquillage-page"}
+          - {label: "Path", name: "slug", widget: "hidden", default: "/maquillage"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "body", widget: "markdown"}
+          - {label: "Image", name: "image", widget: "image"}
+          - label: "Prix"
+            name: "pricing"
+            widget: "list"
+            fields:
+              - {label: "Article", name: "article", widget: "string"}
+              - {label: "Durée", name: "duration", widget: "string"}
+              - {label: "Prix", name: "price", widget: "string"}
+      - file: "src/pages/massage/massage.md"
+        label: "Massage"
+        name: "massage"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "massage-page"}
+          - {label: "Path", name: "slug", widget: "hidden", default: "/massage"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "body", widget: "markdown"}
+          - label: "Prix"
+            name: "pricing"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Article", name: "article", widget: "string"}
+              - {label: "Durée", name: "duration", widget: "string"}
+              - {label: "Prix", name: "price", widget: "string"}
+      - file: "src/pages/consulting/consulting.md"
+        label: "Conseil en image"
+        name: "consulting"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "consulting-page"}
+          - {label: "Path", name: "slug", widget: "hidden", default: "/consulting"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "body", widget: "markdown"}
+          - label: 'Services'
+            name: 'services'
+            widget: 'list'
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "body", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - label: "Prix"
+                name: "pricing"
+                widget: "list"
+                fields:
+                  - {label: "Article", name: "article", widget: "string"}
+                  - {label: "Durée", name: "duration", widget: "string"}
+                  - {label: "Prix", name: "price", widget: "string"}
+          - label: "Autres prix"
+            name: "pricing"
+            widget: "list"
+            fields:
+              - {label: "Article", name: "article", widget: "string"}
+              - {label: "Durée", name: "duration", widget: "string"}
+              - {label: "Prix", name: "price", widget: "string"}
+
