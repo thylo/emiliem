@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: about
 slug: /about
 title: About our values
 contact: |-

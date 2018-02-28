@@ -1,5 +1,5 @@
 ---
-templateKey: consulting-page
+templateKey: consulting
 slug: /consulting
 title: About our values
 services:

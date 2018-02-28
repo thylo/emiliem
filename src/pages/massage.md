@@ -1,5 +1,5 @@
 ---
-templateKey: massage-page
+templateKey: massage
 slug: /massage
 title: Massage
 pricing:

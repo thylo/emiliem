@@ -1,5 +1,5 @@
 ---
-templateKey: workshops-page
+templateKey: workshops
 slug: /workshops
 title: Ateliers
 services:

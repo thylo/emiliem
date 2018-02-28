@@ -1,11 +1,11 @@
-import React from 'react'
-import { withSiteData } from 'react-static'
+import React from "react";
+import { withRouteData, Link } from "react-static";
+import HomeServices from "../components/home/services";
 //
-import logoImg from '../logo.png'
+const Home = ({ data: { services }, content }) => (
+  <section>
+    <HomeServices services={services} />
+  </section>
+);
 
-export default withSiteData(() => (
-  <div>
-    <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
-    <img src={logoImg} alt="" />
-  </div>
-))
+export default withRouteData(Home);

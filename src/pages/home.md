@@ -1,5 +1,5 @@
 ---
-templateKey: home-page
+templateKey: home
 slug: /
 title: Accueil
 services:

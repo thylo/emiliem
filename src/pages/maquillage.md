@@ -1,5 +1,5 @@
 ---
-templateKey: maquillage-page
+templateKey: maquillage
 slug: /maquillage
 title: Maquillage
 image: /img/P1010840a.jpg

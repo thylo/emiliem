@@ -1,5 +1,5 @@
 ---
-templateKey: entreprise-page
+templateKey: entreprise
 slug: /entreprise
 title: En entreprise
 services:
