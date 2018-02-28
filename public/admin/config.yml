@@ -9,7 +9,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/home/home.md"
+      - file: "src/pages/home.md"
         label: "Accueil"
         name: "home"
         fields:
@@ -25,7 +25,7 @@ collections:
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Lien", name: "link", widget: "string"}
               - {label: "Image", name: "image", widget: "image"}
-      - file: "src/pages/entreprise/entreprise.md"
+      - file: "src/pages/entreprise.md"
         label: "En entreprise"
         name: "entreprise"
         fields:
@@ -47,7 +47,7 @@ collections:
                   - {label: "Article", name: "article", widget: "string"}
                   - {label: "Durée", name: "duration", widget: "string"}
                   - {label: "Prix", name: "price", widget: "string"}
-      - file: "src/pages/about/about.md"
+      - file: "src/pages/about.md"
         label: "Contact"
         name: "about"
         fields:
@@ -56,7 +56,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "About", name: "body", widget: "markdown"}
           - {label: "Coordonnées", name: "contact", widget: "markdown"}
-      - file: "src/pages/workshops/workshops.md"
+      - file: "src/pages/workshops.md"
         label: "Ateliers"
         name: "workshops"
         fields:
@@ -77,7 +77,7 @@ collections:
               - {label: "Article", name: "article", widget: "string"}
               - {label: "Durée", name: "duration", widget: "string"}
               - {label: "Prix", name: "price", widget: "string"}
-      - file: "src/pages/maquillage/maquillage.md"
+      - file: "src/pages/maquillage.md"
         label: "Maquillage"
         name: "maquillage"
         fields:
@@ -93,7 +93,7 @@ collections:
               - {label: "Article", name: "article", widget: "string"}
               - {label: "Durée", name: "duration", widget: "string"}
               - {label: "Prix", name: "price", widget: "string"}
-      - file: "src/pages/massage/massage.md"
+      - file: "src/pages/massage.md"
         label: "Massage"
         name: "massage"
         fields:
@@ -109,7 +109,7 @@ collections:
               - {label: "Article", name: "article", widget: "string"}
               - {label: "Durée", name: "duration", widget: "string"}
               - {label: "Prix", name: "price", widget: "string"}
-      - file: "src/pages/consulting/consulting.md"
+      - file: "src/pages/consulting.md"
         label: "Conseil en image"
         name: "consulting"
         fields:
