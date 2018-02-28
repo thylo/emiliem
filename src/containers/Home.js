@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouteData, Link } from "react-static";
+import { withRouteData } from "react-static";
 import HomeServices from "../components/home/services";
 import ReactMarkdown from "react-markdown";
 //

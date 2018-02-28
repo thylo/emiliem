@@ -1,7 +1,8 @@
 ---
 templateKey: consulting
 slug: /consulting
-title: Le conseil en images en 4 étapes
+title: Le conseil en image en 4 étapes
+menu: Conseil en image
 services:
   - title: Analyse des couleurs
     body: >-

@@ -10,6 +10,7 @@ const PricesWrapper = styled.div`
 const PriceWrapper = styled.div`
   display: flex;
   align-items: center;
+  margin: 0.5rem 0;
 `;
 PriceWrapper.Label = styled.h4`
   flex: 1;
@@ -23,9 +24,17 @@ PriceWrapper.Price = styled.h5`
   margin: 0;
 `;
 
-const Price = ({ price: { duration, article, price } }) => {
+PriceWrapper.Image = styled.img`
+  width: 6rem;
+  height: 6rem;
+  margin-right: 0.5rem;
+  object-fit: cover;
+`;
+
+const Price = ({ price: { duration, article, price, image } }) => {
   return (
     <PriceWrapper>
+      {image && <PriceWrapper.Image src={`/uploads/${image}`} alt={article} />}
       <PriceWrapper.Label>{article}</PriceWrapper.Label>
       {duration && <div>{duration}</div>}
       {price && <PriceWrapper.Price>{price}</PriceWrapper.Price>}

@@ -1,10 +1,14 @@
-
-import React from 'react'
+import React from "react";
+import { withRouteData } from "react-static";
+import ReactMarkdown from "react-markdown";
 //
+const About = ({ data: { title, contact, image }, content }) => (
+  <section>
+    <h1>{title}</h1>
+    <img src={`/uploads/${image}`} alt={title} />
+    <ReactMarkdown source={content} />
+    <ReactMarkdown source={contact} />
+  </section>
+);
 
-export default () => (
-  <div>
-    <h1>This is what we're all about.</h1>
-    <p>React, static sites, performance, speed. It's the stuff that makes us tick.</p>
-  </div>
-)
+export default withRouteData(About);

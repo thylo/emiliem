@@ -54,7 +54,7 @@ export default {
       return {
         path: page.data.slug,
         component: `src/containers/${capitalize(page.data.templateKey)}`,
-        getData: () => page
+        getData: () => ({ content: page.content, data: page.data, pages })
       };
     });
     routes.push({
