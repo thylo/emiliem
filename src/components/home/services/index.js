@@ -30,8 +30,8 @@ const Title = styled.h3`
 `;
 
 const Description = styled.div`
-  background: white;
-  padding: 1rem;
+  padding: 0 1rem;
+  text-align: center;
 `;
 
 const ImageWrapper = styled(DuotoneImage)`

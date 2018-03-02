@@ -4,9 +4,7 @@ import Services from "../components/home/services";
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 //
-const Wrapper = styled.section`
-  overflow: hidden;
-`;
+const Wrapper = styled.section``;
 
 const Title = styled.h2`
   text-align: center;
@@ -18,21 +16,21 @@ const Content = styled.h3`
   margin-bottom: 0;
 `;
 
-const HeaderWrapper = styled.div`
-  max-width: 1024px;
-  margin: auto;
-`;
+const HeaderWrapper = styled.div``;
 
 const ServicesWrapper = styled.div`
-  background-image: url("svg/bgtop.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: top;
-  background-color: white;
+  overflow: hidden;
 `;
 
 const Footer = styled.footer`
+  overflow: hidden;
   text-align: center;
+  padding-top:5rem;
+  background-image: url("svg/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 0;
+  background-color: #d4c7b2;
 `;
 
 const Home = ({ data: { title, services }, content }) => (

@@ -13,11 +13,6 @@ injectGlobal`
 `;
 
 const AppStyles = styled.section`
-  background-image: url("svg/bgbottom.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: top;
-  //background-color: #ddd2bd;
 `;
 
 const App = () => (
