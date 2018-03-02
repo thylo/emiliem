@@ -16,9 +16,9 @@ services:
     title: En pratique
 ---
 
-# Le massage assis
+## Le massage assis
 
-## Outil bien-etre a disposition des entreprises.
+### Outil bien-etre a disposition des entreprises.
 
 Originaire du Japon, où il est d’ailleurs considéré comme une médecine, le shiatsu signi e « pression des doigts ».
 

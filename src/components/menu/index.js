@@ -76,4 +76,6 @@ const Menu = ({ pages, open, setOpen }) => {
   );
 };
 
-export default compose(withState("open", "setOpen", true), withRouteData)(Menu);
+export default compose(withState("open", "setOpen", false), withRouteData)(
+  Menu
+);

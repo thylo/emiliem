@@ -13,6 +13,7 @@ const ServiceWrapper = styled.div`
 
 const HomeService = ({ service }) => (
   <ServiceWrapper>
+    <img src={`/images/250x250-${service.image.substr(1)}`} alt="" />
     <h3>
       <Link to={service.link}>{service.title}</Link>
     </h3>

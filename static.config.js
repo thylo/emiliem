@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { Component } from "react";
 import { ServerStyleSheet } from "styled-components";
 import { capitalize } from "lodash";
@@ -6,6 +5,21 @@ import fs from "fs";
 import klaw from "klaw";
 import path from "path";
 import matter from "gray-matter";
+import Typography from "typography";
+import Theme from "typography-theme-moraga";
+import { TypographyStyle, GoogleFont } from "react-typography";
+
+Theme.overrideThemeStyles = ({ rhythm }, options) => ({
+  a: {
+    color: "hsla(189,100%,24%,.8)"
+  },
+  "a:hover": {
+    color: "hsla(189,100%,14%,.8)"
+  }
+});
+Theme.headerColor = "hsl(259, 73%, 15%)";
+
+const typography = new Typography(Theme);
 
 function getPosts() {
   const items = [];
@@ -44,6 +58,10 @@ function getPosts() {
   return getFiles();
 }
 
+const getPageData = async ({ content, data }, pages) => {
+  return { content, data, pages };
+};
+
 export default {
   getSiteData: () => ({
     title: "React Static"
@@ -54,7 +72,7 @@ export default {
       return {
         path: page.data.slug,
         component: `src/containers/${capitalize(page.data.templateKey)}`,
-        getData: () => ({ content: page.content, data: page.data, pages })
+        getData: () => getPageData(page, pages)
       };
     });
     routes.push({
@@ -82,6 +100,9 @@ export default {
               content="width=device-width, initial-scale=1"
             />
             {renderMeta.styleTags}
+
+            <TypographyStyle typography={typography} />
+            <GoogleFont typography={typography} />
           </Head>
           <Body>{children}</Body>
         </Html>
