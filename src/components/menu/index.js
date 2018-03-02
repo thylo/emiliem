@@ -32,6 +32,7 @@ MenuWrapper.Logo = styled(Link)`
   padding: 1rem;
   display: block;
   svg {
+  max-width: 100%;
     transform: translateX(-1.15rem);
   }
 `;
