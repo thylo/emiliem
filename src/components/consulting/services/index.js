@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-static";
 import Prices from "../../prices";
+import { DiamondImage } from "../../page";
 
 const Wrapper = styled.div``;
 
@@ -13,7 +14,7 @@ const ServiceWrapper = styled.div`
 
 const ConsultingService = ({ service: { image, title, body, pricing } }) => (
   <ServiceWrapper>
-    <img src={`/uploads/${image}`} alt={title} />
+    <DiamondImage image={image} />
     <h3>{title}</h3>
     <div>{body}</div>
     <Prices prices={pricing} />

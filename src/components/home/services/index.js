@@ -3,56 +3,58 @@ import styled from "styled-components";
 import { Link } from "react-static";
 
 import { DuotoneImage } from "react-duotone";
-import color from "color";
-import {beige, darkGreen} from "../../../Colors";
+import MediaQuery from "../../../MediaQuery";
+import { beige, darkGreen } from "../../../Colors";
+import { DiamondImage } from "../../page";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  max-width: 960px;
+  margin: auto;
+`;
 const ServiceWrapper = styled.div`
   padding: 1rem;
+  ${MediaQuery.tablet`display:flex;align-items:center; margin:0 6rem`};
 `;
 
 const TitleWrapper = styled.div`
   text-align: center;
   position: relative;
+  ${MediaQuery.tablet`width:10rem`};
 `;
 
 const Title = styled.h3`
   position: absolute;
   text-transform: uppercase;
-  left: 50%;
-  top: 50%;
-  background: #fefefe;
+  background: rgba(254,254,254,.9);
   padding: 0.5rem;
+  z-index: 1;
   a {
     //font-weight: 400;
-    font-size: 2rem;
+    //font-size: 1rem;
   }
+  top: 50%;
+  left: 50%;
+  ${MediaQuery.tablet`bottom:50%; right:50%; top:inherit; left: inherit`};
 `;
 
 const Description = styled.div`
+  flex: 1;
   padding: 0 1rem;
-  text-align: center;
-`;
-
-const ImageWrapper = styled(DuotoneImage)`
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  text-align: center ${MediaQuery.tablet`padding:0;text-align:left`};
 `;
 
 const HomeService = ({ service }) => (
   <ServiceWrapper>
     <TitleWrapper>
-      <ImageWrapper
-        src={`/images/250x250-${service.image.substr(1)}`}
-        alt=""
-        primaryColor={beige}
-        secondaryColor={darkGreen}
-      />
+      <DiamondImage image={service.image} />
       <Title>
         <Link to={service.link}>{service.title}</Link>
       </Title>
     </TitleWrapper>
-    <Description>{service.description}</Description>
+    <Description>
+      <p>{service.description}</p>
+      <Link to={service.link}>En savoir plus</Link>
+    </Description>
   </ServiceWrapper>
 );
 
