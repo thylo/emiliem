@@ -4,7 +4,7 @@ import Services from "../components/home/services";
 
 import styled from "styled-components";
 import Footer from "../components/footer";
-import { Header } from "../components/page";
+import {PageHeader} from "../components/page";
 //
 const Wrapper = styled.section``;
 
@@ -14,7 +14,7 @@ const ServicesWrapper = styled.div`
 
 const Home = ({ data: { title, services }, content }) => (
   <Wrapper>
-    <Header content={content} title={title} />
+    <PageHeader content={content} title={title} />
     <ServicesWrapper>
       <Services services={services} />
       <Footer />

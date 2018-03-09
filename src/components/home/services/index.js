@@ -25,7 +25,7 @@ const TitleWrapper = styled.div`
 const Title = styled.h3`
   position: absolute;
   text-transform: uppercase;
-  background: rgba(254,254,254,.9);
+  background: rgba(254, 254, 254, 0.9);
   padding: 0.5rem;
   z-index: 1;
   a {
@@ -46,7 +46,7 @@ const Description = styled.div`
 const HomeService = ({ service }) => (
   <ServiceWrapper>
     <TitleWrapper>
-      <DiamondImage image={service.image} />
+      <DiamondImage size="250x250" image={service.image} />
       <Title>
         <Link to={service.link}>{service.title}</Link>
       </Title>
