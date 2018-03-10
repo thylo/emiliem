@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-static";
-
-import { DuotoneImage } from "react-duotone";
 import MediaQuery from "../../../MediaQuery";
-import { beige, darkGreen } from "../../../Colors";
 import { DiamondImage } from "../../page";
 
 const Wrapper = styled.div`

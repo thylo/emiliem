@@ -17,12 +17,14 @@ export const DiamondImage = ({ image, size }) => {
   if (!image) return <div />;
   return (
     <ImageWrapper>
-      <Image
-        src={`/images/${size}-${image.substr(1)}`}
-        alt=""
-        primaryColor={beige}
-        secondaryColor={darkGreen}
-      />
+      {image && (
+        <Image
+          src={`/images/${size}-${image.substr(1)}`}
+          alt=""
+          primaryColor={beige}
+          secondaryColor={darkGreen}
+        />
+      )}
     </ImageWrapper>
   );
 };
