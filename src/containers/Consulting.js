@@ -1,13 +1,13 @@
 import React from "react";
 import { withRouteData, Link } from "react-static";
 import ConsultingServices from "../components/consulting/services";
-import { Header } from "../components/page";
+import {PageHeader, PageWrapper} from "../components/page";
 //
-const Home = ({ data: { title, services }, content }) => (
-  <section>
-    <Header content={content} title={title} />
+const Consulting = ({ data: { title, services }, content }) => (
+  <PageWrapper>
+    <PageHeader content={content} title={title} />
     <ConsultingServices services={services} />
-  </section>
+  </PageWrapper>
 );
 
-export default withRouteData(Home);
+export default withRouteData(Consulting);

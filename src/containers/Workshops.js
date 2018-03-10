@@ -3,14 +3,24 @@ import { withRouteData, Link } from "react-static";
 import WorkshopsServices from "../components/workshops/services";
 import ReactMarkdown from "react-markdown";
 import Prices from "../components/prices";
+import { PageHeader, PageWrapper } from "../components/page";
+
+import styled from "styled-components";
+const PriceWrapper = styled.div`
+  max-width: 1024px;
+  margin: auto;
+`;
 //
 const Workshops = ({ data: { title, services, pricing }, content }) => (
-  <section>
-    <h1>{title}</h1>
+  <PageWrapper>
+    <PageHeader content={content} title={title} />
     <ReactMarkdown source={content} />
     <WorkshopsServices services={services} />
-    <Prices prices={pricing} />
-  </section>
+    <PriceWrapper>
+        <h3>Prix</h3>
+      <Prices prices={pricing} />
+    </PriceWrapper>
+  </PageWrapper>
 );
 
 export default withRouteData(Workshops);

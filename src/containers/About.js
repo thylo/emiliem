@@ -8,7 +8,7 @@ import {
   PageIntro,
   PageTitle
 } from "../components/page";
-import {brown, lightBrown} from "../Colors";
+import {beige, brown, lightBrown} from "../Colors";
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,13 +19,12 @@ const Wrapper = styled.div`
   position: relative;
   max-width: 960px;
   margin: 0 auto 10rem auto;
-  background: ${lightBrown};
+  background: ${brown};
   z-index: 1;
   &:before{
     position: absolute;
     content: "";
-    
-    background: ${brown};
+    background: ${beige};
     top:0;
     height:100%;
     left:0;
@@ -38,13 +37,13 @@ const Wrapper = styled.div`
 const Contact = styled(ReactMarkdown)`
   z-index: 2;
   margin:1rem;
-  color: white;
+  color: #222;
   padding: 1rem;
   text-align: center;
   h2,
   h3,
   h4 {
-    color: white;
+    color: #111;
   }
 `;
 

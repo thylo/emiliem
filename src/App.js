@@ -5,6 +5,7 @@ import { hot } from "react-hot-loader";
 //
 import Routes from "react-static-routes";
 import Menu from "./components/menu";
+import Responsive from "./components/menu/Responsive";
 
 injectGlobal`
   body {
@@ -12,13 +13,13 @@ injectGlobal`
   }
 `;
 
-const AppStyles = styled.section`
-`;
+const AppStyles = styled.section``;
 
 const App = () => (
   <Router>
     <AppStyles>
       <Menu />
+      <Responsive />
       <div className="content">
         <Routes />
       </div>

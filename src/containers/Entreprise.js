@@ -1,14 +1,15 @@
 import React from "react";
 import { withRouteData, Link } from "react-static";
-import ReactMarkdown from "react-markdown";
+
 import EntrepriseServices from "../components/entreprise/services";
+import { PageHeader, PageWrapper } from "../components/page";
+import ConsultingServices from "../components/consulting/services";
 //
 const Entreprise = ({ data: { title, services }, content }) => (
-  <section>
-    <h1>{title}</h1>
-    <ReactMarkdown source={content} />
-    <EntrepriseServices services={services} />
-  </section>
+  <PageWrapper>
+    <PageHeader content={content} title={title} />
+    <ConsultingServices services={services} />
+  </PageWrapper>
 );
 
 export default withRouteData(Entreprise);

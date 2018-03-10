@@ -1,27 +1,58 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
+
+import { darkBeige } from "../../Colors";
 
 const FooterWrapper = styled.footer`
   overflow: hidden;
   text-align: center;
   padding-top: 5rem;
-  background-image: url("svg/diamond.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: 0;
-  background-color: #d4c7b2;
+  position: relative;
+  &:before {
+    position: absolute;
+    z-index: 2;
+    background-image: url("svg/diamond.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 0;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &:after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    background-color: #d4c7b2;
+    bottom: 0;
+    top: 1rem;
+    left: 0;
+    right: 0;
+  }
+`;
+
+const Background = styled.div`
+  position: relative;
+  z-index: 3;
+`;
+const Content = styled.div`
+  overflow: hidden;
 `;
 
 const Footer = () => (
   <FooterWrapper>
-    <h3>Je m'adapte a vos besoins</h3>
-    <div>
-      <p>
-        N’hésitez pas à me contacter pour toute question et construction de
-        votre programme personnalisé.
-      </p>
-      <p>info@emiliem.be • 0495 65 00 14 www.emiliem.be</p>
-    </div>
+    <Background>
+      <h3>Je m'adapte a vos besoins</h3>
+      <Content>
+        <p>
+          N’hésitez pas à me contacter pour toute question et construction de
+          votre programme personnalisé.
+        </p>
+        <p>info@emiliem.be • 0495 65 00 14 www.emiliem.be</p>
+      </Content>
+    </Background>
   </FooterWrapper>
 );
 

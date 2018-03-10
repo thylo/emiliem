@@ -1,54 +1,49 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
-import XIcon from "react-feather/dist/icons/x-circle";
-import HorizontalIcon from "react-feather/dist/icons/menu";
 import { Link, withRouteData } from "react-static";
 import { compose, withState } from "recompose";
+import MediaQuery from "../../MediaQuery";
 
 const MenuWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  position: relative;
+  max-width: 1024px;
+  margin: auto;
+  padding: 1rem;
+  display: none;
+  ${MediaQuery.tablet`display:block`};
 `;
 
 MenuWrapper.Items = styled.div`
-  position: fixed;
-  background: white;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
-  flex-direction: column;
-  padding-top: 4rem;
+  align-items: center;
+  flex-direction: row;
+`;
+
+MenuWrapper.Section = styled.div`
+  flex: 1;
+  align-items: center;
+  display: flex;
 `;
 
 MenuWrapper.Item = styled(Link)`
   padding: 1rem;
-  color: #00687a;
+  color: #222;
   text-align: center;
+  flex: 1;
+  .active {
+    color: #00687a;
+  }
 `;
 MenuWrapper.Logo = styled(Link)`
-  padding: 1rem;
   display: block;
+  text-align: center;
   svg {
-  max-width: 100%;
+    max-width: 100%;
     transform: translateX(-1.15rem);
   }
 `;
 
-const CloseIcon = styled(XIcon)`
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  cursor: pointer;
-`;
-const MenuIcon = styled(HorizontalIcon)`
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  cursor: pointer;
-`;
 /*<MenuWrapper.Logo to={"/"}>
         <Logo width={250} height={250} />
       </MenuWrapper.Logo>*/
@@ -56,23 +51,21 @@ const MenuIcon = styled(HorizontalIcon)`
 const Menu = ({ pages, open, setOpen }) => {
   return (
     <MenuWrapper>
-      <MenuWrapper.Logo to={"/"}>
-        <Logo style={{ width: "20rem" }} />
-      </MenuWrapper.Logo>
-      {!open && <MenuIcon onClick={() => setOpen(true)} />}
-      {open && (
-        <MenuWrapper.Items>
-          <CloseIcon onClick={() => setOpen(false)} />
-          {pages.map(
-            ({ data: { title, slug, menu } }, key) =>
-              slug !== "/" && (
-                <MenuWrapper.Item key={key} to={slug}>
-                  {menu ? menu : title}
-                </MenuWrapper.Item>
-              )
-          )}
-        </MenuWrapper.Items>
-      )}
+      <MenuWrapper.Items>
+        <MenuWrapper.Logo to={"/"}>
+          <Logo style={{ width: "10rem", height: "10rem" }} />
+        </MenuWrapper.Logo>
+        <MenuWrapper.Section>
+          <MenuWrapper.Item to={"/entreprise"}>En entreprise</MenuWrapper.Item>
+          <MenuWrapper.Item to={"/maquillage"}>Maquillage</MenuWrapper.Item>
+          <MenuWrapper.Item to={"/consulting"}>
+            Conseil en image
+          </MenuWrapper.Item>
+          <MenuWrapper.Item to={"/massage"}>Massage</MenuWrapper.Item>
+          <MenuWrapper.Item to={"/workshops"}>Ateliers</MenuWrapper.Item>
+          <MenuWrapper.Item to={"/about"}>Contact</MenuWrapper.Item>
+        </MenuWrapper.Section>
+      </MenuWrapper.Items>
     </MenuWrapper>
   );
 };

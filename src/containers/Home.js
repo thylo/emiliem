@@ -3,23 +3,20 @@ import { withRouteData } from "react-static";
 import Services from "../components/home/services";
 
 import styled from "styled-components";
-import Footer from "../components/footer";
-import {PageHeader} from "../components/page";
+import {PageHeader, PageWrapper} from "../components/page";
 //
-const Wrapper = styled.section``;
 
 const ServicesWrapper = styled.div`
   overflow: hidden;
 `;
 
 const Home = ({ data: { title, services }, content }) => (
-  <Wrapper>
+  <PageWrapper>
     <PageHeader content={content} title={title} />
     <ServicesWrapper>
       <Services services={services} />
-      <Footer />
     </ServicesWrapper>
-  </Wrapper>
+  </PageWrapper>
 );
 
 export default withRouteData(Home);
