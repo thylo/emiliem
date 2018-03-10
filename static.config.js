@@ -99,6 +99,7 @@ export default {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
+            <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             {renderMeta.styleTags}
 
             <TypographyStyle typography={typography} />

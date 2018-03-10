@@ -24,6 +24,7 @@ const App = () => (
         <Routes />
       </div>
     </AppStyles>
+    <div data-netlify-identity-button>Login</div>
   </Router>
 );
 
