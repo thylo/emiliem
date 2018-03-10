@@ -24,7 +24,7 @@ export const DiamondImage = ({ image, size }) => {
   return (
     <ImageWrapper>
       {image &&
-        window && (
+        typeof window !== "undefined" && (
           <Image
             src={`/images/${size}-${image.substr(1)}`}
             alt=""
@@ -33,7 +33,7 @@ export const DiamondImage = ({ image, size }) => {
           />
         )}
       {image &&
-        !window && (
+        typeof window === "undefined" && (
           <BaseImage src={`/images/${size}-${image.substr(1)}`} alt="" />
         )}
     </ImageWrapper>
