@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { DuotoneImage } from "react-duotone";
 import { beige, darkGreen } from "../../Colors";
 
-const Image = styled(DuotoneImage)`
+const Image = styled.img`
   margin: 0;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
