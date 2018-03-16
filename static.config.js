@@ -15,9 +15,11 @@ Theme.overrideThemeStyles = ({ rhythm }, options) => ({
   },
   "a:hover": {
     color: "hsla(189,100%,14%,.8)"
-  }
+  },
+  h2: { fontWeight: 400 }
 });
 Theme.headerColor = "hsl(259, 73%, 15%)";
+Theme.scaleRatio = 1.6;
 
 const typography = new Typography(Theme);
 
@@ -99,7 +101,10 @@ export default {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
-            <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            <script
+              type="text/javascript"
+              src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+            />
             {renderMeta.styleTags}
 
             <TypographyStyle typography={typography} />

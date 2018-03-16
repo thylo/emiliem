@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 const Title = styled.h2`
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 `;
 
 const Content = styled.h3`
