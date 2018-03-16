@@ -16,8 +16,6 @@ services:
     title: En pratique
 ---
 
-## Outil bien-etre a disposition des entreprises.
-
 Originaire du Japon, où il est d’ailleurs considéré comme une médecine, le shiatsu signi e « pression des doigts ».
 
 Le massage assis libère la circulation d’énergie en utilisant des techniques de shiatsu telles que des pressions sur des points situés le long des méridiens, des percussions, des tapotements et des étirements.
