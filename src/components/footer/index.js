@@ -50,7 +50,7 @@ const Footer = () => (
           N’hésitez pas à me contacter pour toute question et construction de
           votre programme personnalisé.
         </p>
-        <p>info@emiliem.be • 0495 65 00 14 www.emiliem.be</p>
+        <p><a href="mailto:info@emiliem.be">info@emiliem.be</a> • <a href="tel:0495650014">0495 65 00 14</a></p>
       </Content>
     </Background>
   </FooterWrapper>
