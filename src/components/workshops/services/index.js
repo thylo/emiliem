@@ -24,7 +24,12 @@ ServiceWrapper.Content = styled.div`
 
 const WorkshopsService = ({ service: { image, title, body, pricing } }) => (
   <ServiceWrapper>
-    {image && <ServiceWrapper.Image src={`/images/250x250-${image.substr(1)}`} alt={title} />}
+    {image && (
+      <ServiceWrapper.Image
+        src={`/images/250x250-${image.replace("/uploads/", "")}`}
+        alt={title}
+      />
+    )}
     <ServiceWrapper.Content>
       <h3>{title}</h3>
       <div>{body}</div>

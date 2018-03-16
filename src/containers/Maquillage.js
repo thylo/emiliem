@@ -18,7 +18,7 @@ const Maquillage = ({ data: { title, image }, content }) => (
   <PageWrapper>
     <PageHeader content={content} title={title} />
       <ImageWrapper>
-    <Image src={`/images/650-${image.substr(1)}`} />
+    <Image src={`/images/650-${image.replace('/uploads/','')}`} />
       </ImageWrapper>
   </PageWrapper>
 );

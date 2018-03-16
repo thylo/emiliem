@@ -24,18 +24,13 @@ export const DiamondImage = ({ image, size }) => {
   return (
     <ImageWrapper>
       {image &&
-        typeof window !== "undefined" && (
           <Image
-            src={`/images/${size}-${image.substr(1)}`}
+            src={`/images/${size}-${image.replace('/uploads/','')}`}
             alt=""
             primaryColor={beige}
             secondaryColor={darkGreen}
           />
-        )}
-      {image &&
-        typeof window === "undefined" && (
-          <BaseImage src={`/images/${size}-${image.substr(1)}`} alt="" />
-        )}
+        }
     </ImageWrapper>
   );
 };

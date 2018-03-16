@@ -56,7 +56,7 @@ const Price = ({ price: { duration, article, price, image }, flex }) => {
       {image && (
         <PriceWrapper.Image
           flex={flex}
-          src={`/uploads/${image}`}
+          src={`/images/250x250-${image.replace('/uploads/','')}`}
           alt={article}
         />
       )}
