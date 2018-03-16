@@ -8,7 +8,7 @@ services:
       ergonomique. Une séance dure 15 minutes et permet de masser les épaules,
       la nuque, la tête, les bras, les mains, le dos, les hanches et les
       jambes.
-    image: /P1010827a.jpg
+    image: /uploads/P1010827a.jpg
     pricing:
       - article: >-
           Le prix est de 60 € /heure (HTVA), correspondant à 3 personnes

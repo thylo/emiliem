@@ -2,7 +2,7 @@
 templateKey: about
 slug: /about
 title: Contact
-image: /IMG_6843_DxO.jpg
+image: /uploads/IMG_6843_DxO.jpg
 contact: |-
   ### Je m'adapte à vos besoins
   
