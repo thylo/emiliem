@@ -12,7 +12,7 @@ services:
     pricing:
       - article: Analyse des couleurs approfondie + nuancier personnalisé
         duration: 1h30
-        price: '75'
+        price: 75€
   - title: Maquillage
     body: >-
       Sur base de votre analyse des couleurs, apprenez à vous maquiller de
