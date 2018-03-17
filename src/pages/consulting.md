@@ -27,7 +27,7 @@ services:
         price: 90€
       - article: Maquillage pour une occasion avec une séance d’essai
         price: 100€
-      - article: Maquillage pour une occasion sans une séance d’essai
+      - article: Maquillage pour une occasion sans séance d’essai
         price: 60€
   - title: Visagisme
     body: >-
