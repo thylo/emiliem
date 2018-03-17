@@ -33,7 +33,7 @@ services:
     body: >-
       La morphologie de votre visage détermine quelle paire de lunettes,
       coiffure, barbe et accessoires privilégier.
-    image: /uploads/glasses-98452_1280.png
+    image: /uploads/grimace-388987_1920.jpg
     pricing:
       - article: 'Visagisme et conseils lunettes, bijoux, accessoires, coiffure'
         duration: 1h
