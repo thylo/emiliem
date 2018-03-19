@@ -1,18 +1,27 @@
 ---
+menu: ...
 templateKey: about
 slug: /about
 title: Contact
-image: /uploads/IMG_6843_DxO.jpg
-contact: |-
+contact: >-
   ### Je m'adapte à vos besoins
-  
-  #### N'hésitez pas à me contacter pour toute question et construction de votre programme personalisé
-    
+
+
+  #### N'hésitez pas à me contacter pour toute question et construction de votre
+  programme personalisé
+
+
   Emilie Moreels
-  
+
+
   0495 65 00 14
-    
+
+
   info@emiliem.be
+
+
+  Walhain (déplacements possibles Wallonie et Bruxelles)
+image: /uploads/IMG_6843_DxO.jpg
 ---
 
 Après un parcours assez classique et de nombreuses formations suivies dans différents domaines du bien-être, Emilie a eu envie d’en faire son métier principal et de partager avec d’autres ses apprentissages. 
