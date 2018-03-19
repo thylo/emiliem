@@ -96,6 +96,11 @@ export default {
       return (
         <Html>
           <Head>
+            <title>Emiliem</title>
+              <meta property="og:title" content="EmilieM" />
+              <meta property="og:description" content="Conseil en image - maquillage - massage" />
+              <meta property="og:image" content="http://www.emiliem.be/images/250x250-P1010868b.jpg" />
+
             <meta charSet="UTF-8" />
             <meta
               name="viewport"
