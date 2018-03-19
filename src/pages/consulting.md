@@ -1,8 +1,8 @@
 ---
+menu: Conseil en image
 templateKey: consulting
 slug: /consulting
 title: Le conseil en image en 4 étapes
-menu: Conseil en image
 services:
   - title: Analyse des couleurs
     body: >-
@@ -12,12 +12,12 @@ services:
     pricing:
       - article: Analyse des couleurs approfondie + nuancier personnalisé
         duration: 1h30
-        price: '75'
+        price: 75€
   - title: Maquillage
     body: >-
       Sur base de votre analyse des couleurs, apprenez à vous maquiller de
       façon à mettre en lumière vos atouts naturels (ZAO MakeUp: maquillage
-      naturel rechargeable et durable)
+      naturel, rechargeable et durable)
     image: /uploads/P1010845a.jpg
     pricing:
       - article: >-
@@ -27,12 +27,13 @@ services:
         price: 90€
       - article: Maquillage pour une occasion avec une séance d’essai
         price: 100€
-      - article: Maquillage pour une occasion sans une séance d’essai
+      - article: Maquillage pour une occasion sans séance d’essai
         price: 60€
   - title: Visagisme
     body: >-
       La morphologie de votre visage détermine quelle paire de lunettes,
       coiffure, barbe et accessoires privilégier.
+    image: /uploads/grimace-388987_1920.jpg
     pricing:
       - article: 'Visagisme et conseils lunettes, bijoux, accessoires, coiffure'
         duration: 1h
@@ -42,7 +43,8 @@ services:
       Découvrez les coupes de vêtements et les matières qui vous mettent en
       valeur. Quel est votre style? Quels traits de votre personnalité
       souhaitez- vous mettre en avant dans votre image? Cette étape est
-      cruciale pour renforcer la con ance en soi.
+      cruciale pour renforcer la confiance en soi.
+    image: /uploads/img_6792_dxo - copie.jpg
     pricing:
       - article: Analyse rapide des couleurs + morphologie corps + style
         duration: 1h30
@@ -50,7 +52,9 @@ services:
       - article: Tri de la garde robe
         duration: 2h
         price: 100€
+pricing:
+  - article: ''
 ---
-Je vous propose de vous (re)découvrir a n d’af rmer votre personnalité dans l’image que vous donnez à voir aux autres.
+Je vous propose de vous (re)découvrir afin d’affirmer votre personnalité dans l’image que vous donnez à voir aux autres.
 
-Le conseil en image permet de renforcer la con ance en soi et de se simpli er la vie. Soyez vous-mêmes,  ers de vous et bien dans vos baskets !
+Le conseil en image permet de renforcer la confiance en soi et de se simplifier la vie. Soyez vous-mêmes, fiers de vous et bien dans vos baskets !
