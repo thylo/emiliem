@@ -22,7 +22,7 @@ services:
     pricing:
       - article: >-
           Analyse rapide des couleurs + cours de maquillage + nuancier
-          personnalisé +  che technique
+          personnalisé +  fiche technique
         duration: 2h
         price: 90€
       - article: Maquillage pour une occasion avec une séance d’essai
