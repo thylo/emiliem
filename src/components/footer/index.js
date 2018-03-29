@@ -44,7 +44,7 @@ const Content = styled.div`
 const Footer = () => (
   <FooterWrapper>
     <Background>
-      <h3>Je m'adapte à vos besoins</h3>
+      <h3>Je m'adapte à vos besoins.</h3>
       <Content>
         <p>
           N’hésitez pas à me contacter pour toute question et construction de
