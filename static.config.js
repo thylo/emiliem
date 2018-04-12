@@ -106,8 +106,8 @@ export default {
               property="og:image"
               content="http://www.emiliem.be/images/250x250-P1010868b.jpg"
             />
-            <meta name="description" content="Conseil en image - maquillage - massage">
-            <meta name="keywords" content="conseil,image,maquillage,massage,emilie,moreels,emiliem">
+            <meta name="description" content="Conseil en image - maquillage - massage" />
+            <meta name="keywords" content="conseil,image,maquillage,massage,emilie,moreels,emiliem" />
             <meta charSet="UTF-8" />
             <meta
               name="viewport"
