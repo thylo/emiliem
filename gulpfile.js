@@ -6,7 +6,7 @@ const gulpChanged = require("gulp-changed");
 gulp.task("default", function() {
   return gulp
     .src("public/uploads/*.jpg")
-    .pipe(gulpChanged("public/images"))
+    //.pipe(gulpChanged("public/images"))
     .pipe(
       responsive(
         {
@@ -29,6 +29,16 @@ gulp.task("default", function() {
                 {
                   width: res * 2,
                   rename: { suffix: "@2x", prefix: `${res}-` },
+                  withoutEnlargement: false
+                },
+                {
+                  width: res,
+                  rename: { prefix: `${res}x200-` },
+                  withoutEnlargement: false
+                },
+                {
+                  width: res * 2,
+                  rename: { suffix: "@2x", prefix: `${res}x200-` },
                   withoutEnlargement: false
                 }
               ])

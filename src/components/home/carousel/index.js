@@ -1,21 +1,31 @@
 import React from "react";
 import NukaCarousel from "nuka-carousel";
 
-const Carousel = () => {
+const Carousel = ({ pictures }) => {
+  const pics = pictures.map(({ image }) => {
+    const sizes = [250, 320, 550, 650, 1024, 1920];
+
+    return sizes.map(
+      size => `/images/${size}x200-${image.replace("/uploads/", "")} ${size}w`
+    );
+  });
   return (
     <NukaCarousel
       renderCenterLeftControls={() => null}
       renderCenterRightControls={() => null}
-      initialSlideHeight={400}
+      initialSlideHeight={200}
     >
-      {[1, 2, 3, 4,5].map(key => (
-        <img
-          key={key}
-          src="http://placehold.it/1000x400/ff0022/c0392b/&text=slide1"
-          srcSet={`http://placehold.it/250/ff0022/c0392b/&text=slide250-${key} 250w, http://placehold.it/1000x550/ff0022/c0392b/&text=slide550-${key} 550w, http://placehold.it/650x400/ff0022/c0392b/&text=slide650-${key} 650w,`}
-          sizes={"100vw"}
-        />
-      ))}
+      {pics.map((value, key) => {
+        console.log(value);
+        return (
+          <img
+            key={key}
+            src={pictures[key].image}
+            srcSet={value.join(",")}
+            sizes={"100vw"}
+          />
+        );
+      })}
     </NukaCarousel>
   );
 };
