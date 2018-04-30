@@ -18,6 +18,11 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Menu", name: "menu", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Carousel"
+            name: "carousel"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
           - label: "Services"
             name: "services"
             widget: "list"
