@@ -8,7 +8,7 @@ const Carousel = () => {
       renderCenterRightControls={() => null}
       initialSlideHeight={400}
     >
-      {[1, 2, 3, 4].map(key => (
+      {[1, 2, 3, 4,5].map(key => (
         <img
           key={key}
           src="http://placehold.it/1000x400/ff0022/c0392b/&text=slide1"
