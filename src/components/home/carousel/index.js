@@ -13,7 +13,7 @@ const Carousel = ({ pictures }) => {
     <NukaCarousel
       renderCenterLeftControls={() => null}
       renderCenterRightControls={() => null}
-      initialSlideHeight={200}
+      initialSlideHeight={400}
     >
       {pics.map((value, key) => {
         console.log(value);

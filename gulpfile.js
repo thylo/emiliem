@@ -33,13 +33,13 @@ gulp.task("default", function() {
                   },
                   {
                     width: res,
-                    height: 200,
+                    height: 400,
                     rename: { prefix: `${res}x200-` },
                     withoutEnlargement: false
                   },
                   {
                     width: res * 2,
-                    height: 200,
+                    height: 400,
                     rename: { suffix: "@2x", prefix: `${res}x200-` },
                     withoutEnlargement: false
                   }
