@@ -3,6 +3,10 @@ templateKey: home
 slug: /
 title: Conseil en image - maquillage - massage
 menu: Bienvenue!
+carousel:
+  - image: /uploads/P1010840a.jpg
+  - image: /uploads/P1010845a.jpg
+  - image: /uploads/P1010845a.jpg
 services:
   - description: >-
       Pour travailler l'image de l'entreprise et de ses employés, et pour
