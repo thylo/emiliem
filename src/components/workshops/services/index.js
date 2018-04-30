@@ -7,10 +7,10 @@ const Wrapper = styled.div``;
 const ServiceWrapper = styled.div`
   padding: 1rem;
   margin: 1rem;
-  display: flex;
+  text-align: center;
   max-width: 1024px;
 
-  ${MediaQuery.tablet`flex-direction:row; margin:1rem auto;`};
+  ${MediaQuery.tablet`flex-direction:row; margin:1rem auto;display: flex; text-align: left;`};
 `;
 
 ServiceWrapper.Image = styled.img`
@@ -22,7 +22,7 @@ ServiceWrapper.Content = styled.div`
   ${MediaQuery.tablet`margin-right:1rem`};
 `;
 
-const WorkshopsService = ({ service: { image, title, body, pricing } }) => (
+const WorkshopsService = ({ service: { image, title, body } }) => (
   <ServiceWrapper>
     {image && (
       <ServiceWrapper.Image

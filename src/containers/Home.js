@@ -4,6 +4,7 @@ import Services from "../components/home/services";
 
 import styled from "styled-components";
 import {PageHeader, PageWrapper} from "../components/page";
+import Carousel from "../components/home/carousel";
 //
 
 const ServicesWrapper = styled.div`
@@ -12,6 +13,7 @@ const ServicesWrapper = styled.div`
 
 const Home = ({ data: { title, services }, content }) => (
   <PageWrapper>
+    <Carousel />
     <PageHeader content={content} title={title} />
     <ServicesWrapper>
       <Services services={services} />

@@ -9,6 +9,7 @@ import styled from "styled-components";
 const PriceWrapper = styled.div`
   max-width: 1024px;
   margin: auto;
+  padding:2rem;
 `;
 //
 const Workshops = ({ data: { title, services, pricing }, content }) => (
