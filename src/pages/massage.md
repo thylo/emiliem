@@ -13,3 +13,4 @@ pricing:
     price: 30€
 ---
 Le massage ouvre la porte de la (re)découverte de soi. Il mène à la paix intérieure, à une sensation de bien être et à une détente aux effets durables.
+

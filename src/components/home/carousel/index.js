@@ -16,7 +16,6 @@ const Carousel = ({ pictures }) => {
       initialSlideHeight={400}
     >
       {pics.map((value, key) => {
-        console.log(value);
         return (
           <img
             key={key}

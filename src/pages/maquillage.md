@@ -18,3 +18,4 @@ Quant au maquillage, j’ai choisi la marque ZAO MakeUp, du maquillage naturel, 
 Autant le maquillage peut sublimer un visage en seulement quelques gestes, autant il peut également rendre un visage terne s’il est mal choisi.
 
 Sur base d’une analyse de vos couleurs, je vous propose un cours d’auto maquillage (pour tous les jours ou pour une occasion). Je vous apprends les gestes, mais également à choisir les couleurs qui s’accordent avec vos couleurs naturelles (peau, yeux, cheveux, bouche) et qui illumineront votre visage.
+

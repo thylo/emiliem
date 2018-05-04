@@ -65,6 +65,7 @@ const getPageData = async ({ content, data }, pages) => {
 };
 
 export default {
+    siteRoot: 'https://www.emiliem.be',
   getSiteData: () => ({
     title: "React Static"
   }),

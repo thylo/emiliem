@@ -37,3 +37,4 @@ services:
 Une entreprise est un petit monde à part, dans lequel les employés doivent se sentir en cohérence avec les valeurs de l'entreprise. De plus, la pression et le stress peuvent nuire tant au bien-être de l'employé qu'à l'efficacité de son travail. 
 
 Mes services en entreprises sont actuellement de deux types: une réflexion sur l'image de l'entreprise et de ses employés (style et couleurs essentiellement) ainsi que des massages assis relaxants et stimulants.
+
