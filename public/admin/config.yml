@@ -31,29 +31,36 @@ collections:
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Lien", name: "link", widget: "string"}
               - {label: "Image", name: "image", widget: "image"}
-      - file: "src/pages/entreprise.md"
-        label: "En entreprise"
-        name: "entreprise"
+      - file: "src/pages/soins.md"
+        label: "Soins esthétiques"
+        name: "soins"
         fields:
-          - {label: "Menu", name: "menu", widget: "string"}
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "Entreprise"}
-          - {label: "Path", name: "slug", widget: "hidden", default: "/entreprise"}
+        - {label: "Menu", name: "menu", widget: "string"}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "Soins"}
+        - {label: "Path", name: "slug", widget: "hidden", default: "/consulting"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Description", name: "body", widget: "markdown"}
+        - label: 'Services'
+          name: 'services'
+          widget: 'list'
+          fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - label: "Services"
-            name: "services"
+          - {label: "Description", name: "body", widget: "markdown"}
+          - {label: "Image", name: "image", widget: "image"}
+          - label: "Prix"
+            name: "pricing"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Description", name: "body", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
-              - label: "Prix"
-                name: "pricing"
-                widget: "list"
-                fields:
-                  - {label: "Article", name: "article", widget: "string"}
-                  - {label: "Durée", name: "duration", widget: "string"}
-                  - {label: "Prix", name: "price", widget: "string"}
+            - {label: "Article", name: "article", widget: "string"}
+            - {label: "Durée", name: "duration", widget: "string"}
+            - {label: "Prix", name: "price", widget: "string"}
+        - label: "Autres prix"
+          name: "pricing"
+          widget: "list"
+          fields:
+          - {label: "Article", name: "article", widget: "string"}
+          - {label: "Durée", name: "duration", widget: "string"}
+          - {label: "Prix", name: "price", widget: "string"}
       - file: "src/pages/about.md"
         label: "Contact"
         name: "about"

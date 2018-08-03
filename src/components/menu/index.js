@@ -56,7 +56,7 @@ const Menu = ({ pages, open, setOpen }) => {
           <Logo style={{ width: "10rem", height: "10rem" }} />
         </MenuWrapper.Logo>
         <MenuWrapper.Section>
-          <MenuWrapper.Item to={"/entreprise"}>En entreprise</MenuWrapper.Item>
+          <MenuWrapper.Item to={"/soins"}>Soins esthétiques</MenuWrapper.Item>
           <MenuWrapper.Item to={"/maquillage"}>Maquillage</MenuWrapper.Item>
           <MenuWrapper.Item to={"/consulting"}>
             Conseil en image
