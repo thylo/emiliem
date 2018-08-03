@@ -5,22 +5,26 @@ const Carousel = ({ pictures }) => {
   const pics = pictures.map(({ image }) => {
     const sizes = [250, 320, 550, 650, 1024, 1920];
 
-    return sizes.map(
-      size => `/images/${size}x200-${image.replace("/uploads/", "")} ${size}w`
-    );
+    return {
+      original: `/images/1024x200-${image.replace("/uploads/", "")}`,
+      srcset: sizes.map(
+        size => `/images/${size}x200-${image.replace("/uploads/", "")} ${size}w`
+      )
+    };
   });
+  console.log(pics);
   return (
     <NukaCarousel
       renderCenterLeftControls={() => null}
       renderCenterRightControls={() => null}
       initialSlideHeight={400}
     >
-      {pics.map((value, key) => {
+      {pics.map(({ srcset, original }, key) => {
         return (
           <img
             key={key}
-            src={pictures[key].image}
-            srcSet={value.join(",")}
+            src={original}
+            srcSet={srcset.join(",")}
             sizes={"100vw"}
           />
         );

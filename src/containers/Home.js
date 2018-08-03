@@ -12,6 +12,7 @@ const ServicesWrapper = styled.div`
 `;
 
 const Home = ({ data: { title, services, carousel }, content }) => {
+  console.log(carousel);
   return (
     <PageWrapper>
       <Carousel pictures={carousel} />

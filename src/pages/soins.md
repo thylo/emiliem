@@ -4,7 +4,7 @@ templateKey: Soins
 slug: /soins
 title: Soins esthetiques
 services:
-  - title: Analyse des couleurs
+  - title: Soins du visage
     body: >-
       Découvrez l’énergie des couleurs, celles qui s’accordent avec vos
       couleurs naturelles (peau, yeux, cheveux, bouche)
@@ -13,7 +13,7 @@ services:
       - article: Analyse des couleurs approfondie + nuancier personnalisé
         duration: 1h30
         price: 75€
-  - title: Maquillage
+  - title: Soins du corps
     body: >-
       Sur base de votre analyse des couleurs, apprenez à vous maquiller de
       façon à mettre en lumière vos atouts naturels (ZAO MakeUp: maquillage
@@ -29,29 +29,6 @@ services:
         price: 100€
       - article: Maquillage pour une occasion sans séance d’essai
         price: 60€
-  - title: Visagisme
-    body: >-
-      La morphologie de votre visage détermine quelle paire de lunettes,
-      coiffure, barbe et accessoires privilégier.
-    image: /uploads/grimace-388987_1920.jpg
-    pricing:
-      - article: 'Visagisme et conseils lunettes, bijoux, accessoires, coiffure'
-        duration: 1h
-        price: 60€
-  - title: Analyse de style
-    body: >-
-      Découvrez les coupes de vêtements et les matières qui vous mettent en
-      valeur. Quel est votre style? Quels traits de votre personnalité
-      souhaitez- vous mettre en avant dans votre image? Cette étape est
-      cruciale pour renforcer la confiance en soi.
-    image: /uploads/img_6792_dxo - copie.jpg
-    pricing:
-      - article: Analyse rapide des couleurs + morphologie corps + style
-        duration: 1h30
-        price: 75€
-      - article: Tri de la garde robe
-        duration: 2h
-        price: 100€
 pricing:
   - article: ''
 ---
