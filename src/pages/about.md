@@ -19,4 +19,3 @@ Après un parcours assez classique et de nombreuses formations suivies dans diff
 C’est ainsi qu’Emilie M est née, une série de services, tant pour les entreprises (travail de l’image de l’entreprise véhiculée par les employés et massages assis sur chaise ergonomique) que pour les particuliers (conseil en image, maquillage et massages). 
 
 Mais ce n’est qu’un début… Emilie continue à se former et se perfectionner. Différents services, différents domaines, mais un seul objectif : être bienveillant et respectueux de soi-même, se connecter à son corps et être fier de l’image qu’il renvoie de notre personnalité. 
-
