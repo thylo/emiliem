@@ -10,16 +10,6 @@ contact: >-
   #### N'hésitez pas à me contacter pour toute question et construction de votre
   programme personalisé
 
-
-  Emilie Moreels
-
-
-  0495 65 00 14
-
-
-  info@emiliem.be
-
-
   Walhain (déplacements possibles Wallonie et Bruxelles)
 image: /uploads/IMG_6843_DxO.jpg
 ---

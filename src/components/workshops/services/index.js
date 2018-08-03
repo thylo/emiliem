@@ -9,7 +9,7 @@ const ServiceWrapper = styled.div`
   margin: 1rem;
   text-align: center;
   max-width: 1024px;
-
+  align-items: center;
   ${MediaQuery.tablet`flex-direction:row; margin:1rem auto;display: flex; text-align: left;`};
 `;
 

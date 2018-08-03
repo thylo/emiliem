@@ -120,6 +120,7 @@ collections:
           - {label: "Path", name: "slug", widget: "hidden", default: "/massage"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "body", widget: "markdown"}
+          - {label: "Image", name: "image", widget: "image"}
           - label: "Prix"
             name: "pricing"
             widget: "list"

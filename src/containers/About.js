@@ -8,7 +8,8 @@ import {
   PageIntro,
   PageTitle
 } from "../components/page";
-import {beige, brown, lightBrown} from "../Colors";
+import { beige, brown } from "../Colors";
+import Social from "../components/Social";
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,22 +22,21 @@ const Wrapper = styled.div`
   margin: 0 auto 10rem auto;
   background: ${brown};
   z-index: 1;
-  &:before{
+  &:before {
     position: absolute;
     content: "";
     background: ${beige};
-    top:0;
-    height:100%;
-    left:0;
+    top: 0;
+    height: 100%;
+    left: 0;
     width: 100%;
     transform: rotateZ(-10deg);
   }
-  
 `;
 
-const Contact = styled(ReactMarkdown)`
+const Contact = styled.div`
   z-index: 2;
-  margin:1rem;
+  margin: 1rem;
   color: #222;
   padding: 1rem;
   text-align: center;
@@ -52,7 +52,10 @@ const About = ({ data: { title, contact, image }, content }) => (
     <PageHeader content={content} title={title} />
     <Wrapper>
       <DiamondImage image={image} size={"550x550"} />
-      <Contact source={contact} />
+      <Contact>
+        <ReactMarkdown source={contact} />
+        <Social />
+      </Contact>
     </Wrapper>
   </section>
 );

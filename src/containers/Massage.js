@@ -9,12 +9,26 @@ const PriceWrapper = styled.div`
   margin: auto;
   padding: 1rem;
 `;
-const Massage = ({ data: { title, services, pricing }, content }) => (
+
+const ImageWrapper = styled.div`
+  text-align: center;
+`;
+const Image = styled.img`
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+`;
+
+const Massage = ({ data: { title, services, pricing, image }, content }) => (
   <PageWrapper>
     <PageHeader content={content} title={title} />
-      <PriceWrapper>
-          <Prices prices={pricing} flex/>
-      </PriceWrapper>
+    <ImageWrapper>
+      <Image src={`/images/650-${image.replace("/uploads/", "")}`} />
+    </ImageWrapper>
+    <PriceWrapper>
+      <Prices prices={pricing} flex />
+    </PriceWrapper>
   </PageWrapper>
 );
 

@@ -31,8 +31,9 @@ MenuWrapper.Item = styled(Link)`
   color: #222;
   text-align: center;
   flex: 1;
-  .active {
+  &.active {
     color: #00687a;
+    text-decoration: underline;
   }
 `;
 MenuWrapper.Logo = styled(Link)`

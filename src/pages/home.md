@@ -13,8 +13,8 @@ services:
       bénéficier de massages assis qui permettent de réduire le stress et les
       tensions.
     image: /uploads/chaise.jpg
-    link: /entreprise
-    title: Entreprise
+    link: /soins
+    title: Soins esthétiques
   - description: >-
       Pour vous (re)découvrir et affirmer votre personnalité dans l'image que
       vous donnez à voir aux autres.

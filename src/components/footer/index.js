@@ -1,7 +1,9 @@
-import React from "react";
+import React, {Component} from "react";
 import styled from "styled-components";
 
 import { darkBeige } from "../../Colors";
+import { Facebook, Instagram, Mail, Phone } from "react-feather";
+import Social from "../Social";
 
 const FooterWrapper = styled.footer`
   overflow: hidden;
@@ -41,18 +43,20 @@ const Content = styled.div`
   overflow: hidden;
 `;
 
+
+
 const Footer = () => (
   <FooterWrapper>
-    <Background>
-      <h3>Je m'adapte à vos besoins.</h3>
-      <Content>
-        <p>
-          N’hésitez pas à me contacter pour toute question et construction de
-          votre programme personnalisé.
-        </p>
-        <p><a href="mailto:info@emiliem.be">info@emiliem.be</a> • <a href="tel:0495650014">0495 65 00 14</a></p>
-      </Content>
-    </Background>
+      <Background>
+          <h3>Je m'adapte à vos besoins.</h3>
+          <Content>
+              <p>
+                  N’hésitez pas à me contacter pour toute question et construction de
+                  votre programme personnalisé.
+              </p>
+              <Social/>
+          </Content>
+      </Background>
   </FooterWrapper>
 );
 

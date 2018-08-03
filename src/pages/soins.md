@@ -2,7 +2,7 @@
 menu: Soins
 templateKey: Soins
 slug: /soins
-title: Soins esthetiques
+title: Des soins esthetiques bio et naturels pour un bien être global
 services:
   - title: Soins du visage
     body: >-
