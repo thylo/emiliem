@@ -25,18 +25,20 @@ const Title = styled.h3`
 const Content = styled.div`
   text-align: center;
   flex: 1;
-  ${MediaQuery.tablet`margin-left:2rem; text-align:left`};
+  ${MediaQuery.tablet`text-align:left`};
 `;
 
 const ImageWrapper = styled.div`
-  ${MediaQuery.tablet`width:10rem`};
+  ${MediaQuery.tablet`width:10rem; margin-right:2rem; `};
 `;
 
 const ConsultingService = ({ service: { image, title, body, pricing } }) => (
   <ServiceWrapper>
-    <ImageWrapper>
-      <DiamondImage size="250x250" image={image} />
-    </ImageWrapper>
+    {image && (
+      <ImageWrapper>
+        <DiamondImage size="250x250" image={image} />
+      </ImageWrapper>
+    )}
     <Content>
       <Title>{title}</Title>
       <div>{body}</div>

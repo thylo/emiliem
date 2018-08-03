@@ -3,6 +3,7 @@ import { withRouteData, Link } from "react-static";
 import styled from "styled-components";
 import Prices from "../components/prices";
 import { PageHeader, PageWrapper } from "../components/page";
+import ConsultingServices from "../components/consulting/services";
 //
 const PriceWrapper = styled.div`
   max-width: 1024px;
@@ -26,9 +27,7 @@ const Massage = ({ data: { title, services, pricing, image }, content }) => (
     <ImageWrapper>
       <Image src={`/images/650-${image.replace("/uploads/", "")}`} />
     </ImageWrapper>
-    <PriceWrapper>
-      <Prices prices={pricing} flex />
-    </PriceWrapper>
+    <ConsultingServices services={services} />
   </PageWrapper>
 );
 

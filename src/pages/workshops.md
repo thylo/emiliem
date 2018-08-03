@@ -32,4 +32,4 @@ pricing:
     duration: 2h30
     price: 25€ par personne
 ---
-Le massage ouvre la porte de la (re)découverte de soi. Il mène à la paix intérieure, à une sensation de bien être et à une détente aux effets durables.
+Le massage ouvre la porte de la (re)découverte de soi. Il mène à la paix intérieure, à une sensation de bien être et à une détente aux effets durables.
